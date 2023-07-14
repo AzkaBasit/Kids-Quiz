@@ -1,0 +1,56 @@
+<!--------------------------------------CODE COOMON TO ALL PAGES------------------------------------------>
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src=page.js></script>
+    <title>"Facts-Page"</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <h2 class="title">
+            <span class="title-word title-word-1">FACTS</span>
+            <span class="title-word title-word-2">FOR</span>
+            <span class="title-word title-word-3">YOU!</span>
+
+        </h2>
+    </div>
+    <div>
+    <!--------------------------------------HYPERLINK BUTTON TO HOME PAGE------------------------------------------>
+        <a href="index.html">
+            <button class="home">HOME PAGE!!!<br>
+                <img src="home.png" class="home-img" height="50px" ,width="50px">
+            </button>
+        </a>
+    </div>
+    <!--------------------------------------TEXTBOX HAVING FACTS, IMAGES, NEXT&PREV BUTTONS------------------------------------------>
+    <div class="textbox texted">
+        <!--FACTS-->
+        <div class="labelled">
+            <label id="text">
+                Tomatoes are the most eaten fruit in the world.
+            </label>
+        </div>
+
+        <!--IMAGE-->
+        <div class="fact-pic">
+            <img src="tomato.png" id="myImg">
+        </div>
+        <!--NEXT & PREV BUTTON-->
+        <div class="next-prev">
+            <button class="next-button" onclick="ChangePrev()">
+                <img src="prev-img.jpeg" height="60px" width="60px">
+            </button>
+            <button class="next-button" onclick="ChangeNext()">
+                <img src="next-img.jpeg" height="60px" width="60px">
+            </button>
+        </div>
+
+    </div>

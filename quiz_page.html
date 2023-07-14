@@ -1,0 +1,66 @@
+<!--------------------------------------CODE COOMON TO ALL PAGES------------------------------------------>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src=page.js></script>
+    <title>"Quiz-Page"</title>
+</head>
+
+
+<body>
+
+    <div class="container">
+        <h2 class="title">
+            <span class="title-word title-word-1">FUN</span>
+            <span class="title-word title-word-2">FACTS</span>
+            <span class="title-word title-word-3">QUIZ!</span>
+
+        </h2>
+    </div>
+    <!--------------------------------------HYPERLINK BUTTON TO HOME PAGE------------------------------------------>
+    <div>
+        <a href="index.html">
+            <button class="home">HOME PAGE!!!<br>
+                <img src="home.png" class="home-img" height="50px" ,width="50px">
+            </button>
+        </a>
+    </div>
+
+
+    <!--------------------------TEXTBOX HAVING QUESTIONS, OPTIONS, SUBMIT BUTTON, SCORE--------------------------------->
+    <div class="textbox texted">
+
+        <!--QUESTION-->
+        <button class="start-button" onclick="generateQuestion()">Start The Quiz!</button>
+        <div class="labelled2">
+            <label id="text">
+                <div id="question"></div>
+            </label>
+        </div>
+        <!--OPTIONS-->
+        <div class="options">
+            <div id="choices"></div>
+            <input type="hidden" id="correctAnswer" width="20px" height="20px">
+        </div>
+        <!--SUBMIT BUTTON-->
+        <button type="submit" class="next-button-quiz" id="next" onclick="CHECKING()">
+            <img src="submit.jpg" height="60px" width="60px" style="border-radius: 30px;">
+        </button>
+
+        <!--SCORE-->
+        <div class="result">
+            <div id="result"></div>
+            <div class="scores" id="score">Score: 0</div>
+        </div>
+
+
+    </div>
+
+</body>
+
+</html>

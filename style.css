@@ -1,0 +1,506 @@
+/*--------------------------------------STYLE FOR ALL PAGES------------------------------------------*/
+:root {
+    --bg: #3e4445;
+    --text: rgb(122, 28, 95);
+}
+
+
+body {
+    justify-content: justify;
+    align-items: justify;
+    text-align: justify;
+    text-decoration: none;
+    background-color: var(--bg);
+    background-image: linear-gradient(to bottom right, rgb(92, 218, 240), rgb(113, 241, 99));
+    /*background: linear-gradient(120deg, #ebe84c 30%, rgb(83, 171, 235) 70%);*/
+
+    color: var(--text);
+}
+
+
+
+.title-word {
+    position: relative;
+    animation: colors 1s linear infinite;
+}
+
+.title-word-1 {
+    --color-1: #e68754;
+    --color-2: #1db345;
+    --color-3: #4baecc;
+    --color-4: #34124d;
+}
+
+.title-word-2 {
+    --color-1: #e656d3;
+    --color-2: #dfb552;
+    --color-3: #5ac58a;
+    --color-4: #9d2818;
+}
+
+.title-word-3 {
+    --color-1: #65d8cb;
+    --color-2: #4e0c63;
+    --color-3: #e0ec5e;
+    --color-4: #ee90f9;
+}
+
+
+
+@keyframes colors {
+    0% {
+        color: var(--color-1)
+    }
+
+    32% {
+        color: var(--color-1)
+    }
+
+    33% {
+        color: var(--color-2)
+    }
+
+    65% {
+        color: var(--color-3)
+    }
+
+    66% {
+        color: var(--color-3)
+    }
+
+    99% {
+        color: var(--color-4)
+    }
+
+    100% {
+        color: var(--color-4)
+    }
+}
+
+
+
+.container {
+
+    place-items: center;
+    text-align: center;
+    margin-top: 0px;
+    height: 20px;
+    padding-top: 02px;
+}
+
+.title {
+    font-style: italic;
+    font-family: cursive;
+    font-weight: 800;
+    font-size: 80px;
+    text-transform: uppercase;
+    margin-top: 10px;
+    text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF;
+}
+
+/*--------------------------------------STYLE FOR "HOME" PAGE------------------------------------------*/
+
+/*----------------------------------BUTTONS ON HOME PAGE (to go to FACTS & QUIZ page)------------------------------------------*/
+h2 {
+    color: #4e0c63;
+    text-align: center;
+    font-size: 30px;
+    font-family: cursive;
+
+}
+
+.button {
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-top: 150px;
+    margin-left: 180px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    animation-name: rotate;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    50% {
+        transform: rotate(10deg);
+    }
+
+    100% {
+        transform: rotate(-10deg);
+    }
+}
+
+/*----------------------------------BUTTON TO FACTS PAGE------------------------------------------*/
+.button1 {
+    background-color: white;
+    color: black;
+    border: 2px solid #ea7ac1;
+    box-shadow: 10px 20px 40px #ea7ac1;
+
+}
+
+
+.button1:hover {
+    background-color: #ea89c7;
+    color: white;
+}
+/*----------------------------------BUTTON TO QUIZ PAGE------------------------------------------*/
+.button2 {
+    background-color: white;
+    color: black;
+    border: 2px solid #239576;
+    box-shadow: 10px 20px 40px #239576;
+}
+
+.button2:hover {
+    background-color: #30b68e;
+    color: white;
+}
+
+
+
+/*--------------------------------------STYLE FOR "FACTS" PAGE------------------------------------------*/
+
+/*----------------------------------BUTTON TO GO TO HOME PAGE------------------------------------------*/
+.home {
+    display: inline-block;
+    padding: 10px 10px;
+    font-size: 24px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    font-size: 20px;
+    outline: none;
+    color: #0b0a0a;
+    background-color: #57ef96;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #1d905c;
+}
+
+.home:hover {
+    background-color: #209f66
+}
+
+.home:active {
+    background-color: #0e5434;
+    box-shadow: 0 5px #074127;
+    transform: translateY(4px);
+}
+
+/*----------------------------------MAIN TEXT BOX HAVING FACTS, IMAGES, NEXT&PREV BUTTONS------------------------------------------*/
+.textbox {
+    width: 700px;
+    height: 600px;
+    margin-top: 50px;
+    margin-left: 450px;
+    border-radius: 50px;
+    background-color: rgb(245, 226, 226);
+    border-collapse:separate;
+    box-shadow: 0px 20px 40px #e5dbe2;
+    border:1px solid #d1d0e1;
+    border: black;
+    border-radius: 50px;
+    border-style:groove;
+    animation-name: changebg;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    box-shadow: 0px 20px 20px #e6d2e1;
+}
+
+
+
+@keyframes changebg {
+    0% {
+        background-color: rgb(240, 144, 232);
+    }
+
+    25% {
+        background-color: rgb(221, 109, 189);
+    }
+
+    50% {
+        background-color: rgb(188, 92, 223);
+    }
+
+    75% {
+        background-color: rgb(183, 92, 193);
+    }
+
+    100% {
+        background-color: rgb(130, 37, 151);
+    }
+
+}
+/*----------------------------------FACTS DISPLAY ------------------------------------------*/
+.labelled {
+    font-family: serif;
+    text-align: center;
+    font-size: 50px;
+    font-style: italic;
+    color: #fff;
+    padding-top: 05px;
+    padding-left: 02px;
+    padding-right: 02px;
+    animation: glow 1s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+    from {
+      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+    }
+    
+    to {
+      text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+    }
+}
+
+/*----------------------------------IMAGE REALTED TO THE FACT DISPLAYED------------------------------------------*/
+#myImg {
+    margin-top: 30px;
+    margin-left: 170px;
+    margin-bottom: 0px;
+    height: 300px;
+    width: 400px;
+    box-shadow: 0px 5px 10px 0px rgba(0,255,255,0.7); 
+    animation: vibrate ;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    border: black;
+    border-radius: 50px;
+    border-style:groove;
+    
+}
+ 
+ #myImg:hover{
+    transform: translateY(-5px);
+    box-shadow: 0px 10px 20px 2px rgba(0,255,255,0.7);
+  }
+  
+
+@keyframes vibrate {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    10% {
+        transform: rotate(-10deg);
+    }
+
+    20% {
+        transform: rotate(10deg);
+    }
+
+    30% {
+        transform: rotate(0deg);
+    }
+
+    40% {
+        transform: rotate(10deg);
+    }
+
+    50% {
+        transform: rotate(-10deg);
+    }
+
+    60% {
+        transform: rotate(0deg);
+    }
+
+    70% {
+        transform: rotate(-10deg);
+    }
+
+    80% {
+        transform: rotate(10deg);
+    }
+
+    90% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(-10deg);
+    }
+}
+
+
+/*----------------------------------BUTTON TO NEXT & PREV FACT------------------------------------------*/
+
+.next-prev{
+    display: inline-flex;
+    row-gap: 20px;
+}
+
+.next-button {
+    padding-bottom: 05px ;
+    padding-top: 08px ;
+    padding-left: 05px ;
+    padding-right: 05px ;
+    font-size: 24px;
+    margin-top: 30px;
+    margin-left: 160px;
+
+    text-align: center;
+    cursor: pointer;
+    width: 130px;
+    outline: none;
+    color: #0b0a0a;
+    background-color: #57ef96;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #1d905c;;
+}
+
+.next-button:hover {
+    background-color: #209f66
+}
+
+.next-button:active {
+    background-color: #0e5434;
+    box-shadow: 0 5px #074127;
+    transform: translateY(4px);
+}
+/*--------------------------------------STYLE FOR "QUIZ" PAGE------------------------------------------*/
+
+/*----------------------------------MAIN TEXT BOX HAVING QUESTIONS, CHOICES, SUBMIT BUTTON, SCORE------------------------------------------
+------------------------------------(same style as textbox of facts page styled before)-------------------------------------------------*/
+
+/*----------------------------------    BUTTON TO START QUIZ------------------------------------------*/
+.start-button {
+    padding: 15px 25px;
+    font-size: 24px;
+    margin-top: 10px;
+    margin-left: 270px;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    color: #0b0a0a;
+    background-color: #57ef96;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #1d905c;;
+}
+
+.start-button:hover {
+    background-color: #209f66
+}
+
+.start-button:active {
+    background-color: #0e5434;
+    box-shadow: 0 5px #074127;
+    transform: translateY(4px);
+}
+
+/*----------------------------------    QUESTIONS DISPLAY ------------------------------------------*/
+.labelled2 {
+    font-family: serif;
+    text-align: center;
+    font-size: 50px;
+    font-style: italic;
+    color:#fff;
+    padding-left: 02px;
+    padding-right: 02px;
+    padding-top: 30px;
+    animation: glow 1s ease-in-out infinite alternate;
+
+}
+
+
+
+/*----------------------------------OPTIONS DISPLAY ------------------------------------------*/
+.options {
+    margin-bottom: 1em;
+    font-family: cursive;
+    text-align: center;
+    align-items: center;
+    margin-bottom: 1em;
+    margin-top: 20px;
+    font-size: 40px;
+    font-style: italic;
+    color: #fff;
+    display: block;
+    animation: glow 1s ease-in-out infinite alternate;
+
+}
+
+
+label {
+    display: block;
+}
+
+
+
+
+/*-----------------------------------------BUTTON TO NEXT QS------------------------------------------*/
+.next-button-quiz {
+    padding-bottom: 02px ;
+    padding-top: 02px ;
+    padding-left: 05px ;
+    padding-right: 05px ;
+    font-size: 24px;
+    margin-top: 05px;
+    margin-left: 320px;
+    width: 100px;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    color: #0b0a0a;
+    background-color: #57ef96;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #1d905c;
+}
+
+.next-button-quiz:hover {
+    background-color: #209f66
+}
+
+.next-button-quiz:active {
+    background-color: #0e5434;
+    box-shadow: 0 5px #074127;
+    transform: translateY(4px);
+}
+
+/*---------------------------------- RESULT TELLING ANSWER IS CORRECT OR NOT ------------------------------------------*/
+.result {
+    font-family: serif;
+    text-align: center;
+    font-size: 30px;
+    font-style: italic;
+    color: rgb(192, 224, 231);
+    padding-left: 02px;
+    padding-right: 02px;
+    padding-top: 0px;
+    margin-top: 1em;
+}
+
+
+/*---------------------------------- SCORE DISPLAY ------------------------------------------*/
+.scores {
+    font-size: 40px;
+    margin-top: 02px;
+    font-family: serif;
+    text-align: center;
+    
+    font-style: italic;
+    color: #fff;
+   
+    animation: glow 1s ease-in-out infinite alternate;
+
+}
+
+
+
+
